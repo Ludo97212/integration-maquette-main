@@ -1,103 +1,104 @@
 /* ------------------------------------------ STYLE GENERALE -------------------------------------------------------- */
 h2 {
-    text-align: center;
+  text-align: center;
 }
 .post {
-    display: flex;
+  display: flex;
 }
 .post h3 {
-    text-align: center;
+  color: #a33937;
+  text-align: center;
 }
 .post img {
-    border-radius: 2%;
-    object-fit: cover;
-    box-shadow: black 0px 2px 8px 0px;
+  border-radius: 2%;
+  object-fit: cover;
+  box-shadow: black 0px 2px 8px 0px;
 }
-  
+
 footer {
-    border-top: 1px solid rgb(13, 13, 52);
-    background: linear-gradient(white, white,white, white, rgb(168, 168, 209), rgb(13, 13, 52));
-    display: flex;
-    padding: 25px 0;
+  background: #a33937;
+  border-top: 3px solid rgb(13, 13, 52);
+  display: flex;
+  padding: 25px 0;
 }
 footer a {
-    color: black;
-    font-weight: bold;
+  color: white;
+  font-weight: bold;
 }
 footer a:hover {
-    color: purple;
+  color: black;
 }
 /* ------------------------------------------ FORMAT PC BUREAU -------------------------------------------------------- */
 @media (min-width: 1080px) {
-.container {
+  .container {
     margin: 0 8%;
-}
-.post {
+  }
+  .post {
     flex-direction: row;
     margin: 100px 0;
-}
-.post img {
+  }
+  .post img {
     width: 600px;
     height: 400px;
-}
-.post .text {
+  }
+  .post .text {
     padding: 0 15px;
-}
-.reversed {
+  }
+  .reversed {
     flex-direction: row-reverse;
-}
-footer {
+  }
+  footer {
     flex-direction: row;
     justify-content: space-around;
-}
+  }
 }
 /* ------------------------------------------ RESPONSIVE TABLETTE -------------------------------------------------------- */
 @media (min-width: 720px) and (max-width: 1079px) {
-.container {
+  .container {
     margin: 0 5%;
-}
-.post {
+  }
+  .post {
     flex-direction: column;
     margin: 40px 0;
-}
-.post img {
+  }
+  .post img {
     width: 600px;
     height: auto;
     margin: 0 auto;
-}
-.post p {
+  }
+  .post p {
     text-align: center;
-}
-footer {
+  }
+  footer {
     flex-direction: column;
     align-items: center;
-}
-footer a {
-    margin-top: 10px;
-}
+  }
+  footer a {
+    margin: 10px 0;
+  }
 }
 /* ------------------------------------------ RESPONSIVE MOBILE -------------------------------------------------------- */
 @media (min-width: 100px) and (max-width: 719px) {
-.container {
-    margin: 0 2%;
-}
-.post {
+  .container {
+      margin: 0 2%;
+  }
+  .post {
     flex-direction: column;
     margin: 40px 0;
-}
-.post img {
+  }
+  .post img {
     width: 100%;
     height: auto;
     margin: 0 auto;
-}
-.post p {
+  }
+  .post p {
     text-align: center;
-}
-footer {
+  }
+  footer {
     flex-direction: column;
     align-items: center;
-}
-footer a {
-    margin-top: 10px;
-}
+  }
+  footer a {
+    margin: 10px 0;
+  }
 }

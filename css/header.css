@@ -12,7 +12,8 @@ body {
     /* grid-template-rows: 50px 1fr; */
     align-items: center;
     border-bottom: 3px solid rgb(13, 13, 52);
-    background: linear-gradient(white, white,white, white, rgb(168, 168, 209), rgb(13, 13, 52));
+    /* background: linear-gradient(rgb(200, 200, 200),white, white); */
+    background-color: #a33937;
 }
 
 .logoSection {
@@ -41,6 +42,12 @@ body {
 
 .navLinks > a {
     margin-left: 10px;
+}
+
+.white a {
+  color: white;}
+.white a:hover {
+  color: black;
 }
 
 .navButton {
