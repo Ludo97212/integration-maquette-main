@@ -1,0 +1,110 @@
+@value sm from "./breakpoints.css";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: grid;
+    padding: 5px 15px;
+    grid-template-columns: repeat(9, 1fr);
+    /* grid-template-rows: 50px 1fr; */
+    align-items: center;
+    border-bottom: 3px solid rgb(13, 13, 52);
+    background: linear-gradient(white, white,white, white, rgb(168, 168, 209), rgb(13, 13, 52));
+}
+
+.logoSection {
+    grid-column-start: 1;
+}
+
+/* .logo {
+    margin: 0px;
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: bolder;
+} */
+.logo img {
+    width: 100px;
+    height: auto;
+}
+.logo img:hover {
+    filter: brightness(125%);
+}
+
+.navLinks {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    padding: 0px 20px;
+}
+
+.navLinks > a {
+    margin-left: 10px;
+}
+
+.navButton {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.navButton > button {
+    margin-left: 10px;
+}
+
+
+.menuButton {
+    height: 30px;
+    width: 30px;
+    display: none;
+    grid-column-start: 9;
+    grid-column-end: 10;
+}
+/* MODIF */
+.menuButton:hover {
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+/* ---------- */
+.menuButton > div {
+    height: 2px;
+    background-color: gray;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#menu {
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    right: -100%;
+    z-index: 99;
+    transition: 0.4s ease;
+}
+
+#menu > section {
+    padding: 8px 20px;
+}
+/* MODIF */
+#menu > section a {
+    padding: 0 25px;
+}
+/* --------- */
+
+@media screen and (max-width :1079px) {
+    .navLinks{
+        display: none;
+    }
+    .navButton{
+        display: none;
+    }
+    .menuButton {
+        display: block;
+    }
+}

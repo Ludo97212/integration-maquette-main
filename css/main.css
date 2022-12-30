@@ -1,0 +1,103 @@
+/* ------------------------------------------ STYLE GENERALE -------------------------------------------------------- */
+h2 {
+    text-align: center;
+}
+.post {
+    display: flex;
+}
+.post h3 {
+    text-align: center;
+}
+.post img {
+    border-radius: 2%;
+    object-fit: cover;
+    box-shadow: black 0px 2px 8px 0px;
+}
+  
+footer {
+    border-top: 1px solid rgb(13, 13, 52);
+    background: linear-gradient(white, white,white, white, rgb(168, 168, 209), rgb(13, 13, 52));
+    display: flex;
+    padding: 25px 0;
+}
+footer a {
+    color: black;
+    font-weight: bold;
+}
+footer a:hover {
+    color: purple;
+}
+/* ------------------------------------------ FORMAT PC BUREAU -------------------------------------------------------- */
+@media (min-width: 1080px) {
+.container {
+    margin: 0 8%;
+}
+.post {
+    flex-direction: row;
+    margin: 100px 0;
+}
+.post img {
+    width: 600px;
+    height: 400px;
+}
+.post .text {
+    padding: 0 15px;
+}
+.reversed {
+    flex-direction: row-reverse;
+}
+footer {
+    flex-direction: row;
+    justify-content: space-around;
+}
+}
+/* ------------------------------------------ RESPONSIVE TABLETTE -------------------------------------------------------- */
+@media (min-width: 720px) and (max-width: 1079px) {
+.container {
+    margin: 0 5%;
+}
+.post {
+    flex-direction: column;
+    margin: 40px 0;
+}
+.post img {
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+}
+.post p {
+    text-align: center;
+}
+footer {
+    flex-direction: column;
+    align-items: center;
+}
+footer a {
+    margin-top: 10px;
+}
+}
+/* ------------------------------------------ RESPONSIVE MOBILE -------------------------------------------------------- */
+@media (min-width: 100px) and (max-width: 719px) {
+.container {
+    margin: 0 2%;
+}
+.post {
+    flex-direction: column;
+    margin: 40px 0;
+}
+.post img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.post p {
+    text-align: center;
+}
+footer {
+    flex-direction: column;
+    align-items: center;
+}
+footer a {
+    margin-top: 10px;
+}
+}
